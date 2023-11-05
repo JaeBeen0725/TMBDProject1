@@ -59,6 +59,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as? MovieTableViewCell else { return UITableViewCell() }
+        
         cell.numberLabel.text = "\(indexPath.row + 1)"
         cell.numberLabel.font = UIFont.boldSystemFont(ofSize: 50)
         cell.numberLabel.textAlignment = .center
@@ -77,7 +78,9 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
         cell.movieImageView.contentMode = .scaleAspectFill
-        cell.movieTitleLabel.text = movieList.results[indexPath.row].originalTitle
+       
+        cell.movieTitleLabel.text = movieList.results[indexPath.row].originalTitle ?? movieList.results[indexPath.row].name
+       
         
         
         return cell

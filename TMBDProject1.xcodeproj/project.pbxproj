@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E4F9BF32AF7C21E00C267FE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E4F9BF22AF7C21E00C267FE /* README.md */; };
 		6E7178E32AF7682100120591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7178E22AF7682100120591 /* AppDelegate.swift */; };
 		6E7178E52AF7682100120591 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7178E42AF7682100120591 /* SceneDelegate.swift */; };
 		6E7178E72AF7682100120591 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7178E62AF7682100120591 /* HomeViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E4F9BF22AF7C21E00C267FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6E7178DF2AF7682100120591 /* TMBDProject1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMBDProject1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7178E22AF7682100120591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E7178E42AF7682100120591 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		6E7178D62AF7682100120591 = {
 			isa = PBXGroup;
 			children = (
+				6E4F9BF22AF7C21E00C267FE /* README.md */,
 				6E7178FA2AF768FA00120591 /* .gitignore */,
 				6E7178E12AF7682100120591 /* TMBDProject */,
 				6E7178E02AF7682100120591 /* Products */,
@@ -164,6 +167,7 @@
 			files = (
 				6E7178FB2AF768FA00120591 /* .gitignore in Resources */,
 				6E7178EF2AF7682200120591 /* LaunchScreen.storyboard in Resources */,
+				6E4F9BF32AF7C21E00C267FE /* README.md in Resources */,
 				6E7178EC2AF7682200120591 /* Assets.xcassets in Resources */,
 				6E7178EA2AF7682100120591 /* Main.storyboard in Resources */,
 			);
