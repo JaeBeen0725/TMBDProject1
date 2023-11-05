@@ -23,9 +23,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         movieTableView.dataSource = self
         movieTableView.delegate = self
-        
-        movieTableView.rowHeight = 400
-        //movie()
+        title = "WEEKLY"
+        movieTableView.rowHeight = 150      //movie()
         
       callrequest()
         
@@ -39,7 +38,7 @@ class HomeViewController: UIViewController {
             guard let value = response.value else { return }
             
             self.movieList = value
-            
+            print(self.movieList.results[3].originalTitle)
                     self.movieTableView.reloadData()
             
         }
@@ -60,8 +59,15 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as? MovieTableViewCell else { return UITableViewCell() }
-        
+        cell.numberLabel.text = "\(indexPath.row + 1)"
+        cell.numberLabel.font = UIFont.boldSystemFont(ofSize: 50)
+        cell.numberLabel.textAlignment = .center
+        cell.movieTitle.text = "Title"
+        cell.genreTitle.text = "Genre"
+        cell.genreTitle.font = UIFont.boldSystemFont(ofSize: 20)
+        cell.movieTitle.font = UIFont.boldSystemFont(ofSize: 20)
         cell.movieDateLabel.text = movieList.results[indexPath.item].releaseDate
+        cell.movieTitleLabel.sizeToFit()
         cell.movieGenreLabel.text = genreList[movieList.results[indexPath.item].genreIDS[0]]
         
         if let url = URL(string: "https://image.tmdb.org/t/p/w500/\(movieList.results[indexPath.item].posterPath)") {
@@ -83,9 +89,14 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
         vc.id = movieList.results[indexPath.row].id
-        vc.titleText = movieList.results[indexPath.row].originalTitle ?? "타이틀 없음"
+       
+        if movieList.results[indexPath.row].originalTitle != nil {
+            vc.titleText = movieList.results[indexPath.row].originalTitle ?? "타이틀 없음"
+        } else {
+            vc.titleText = "notitle"
+        }
+      
         vc.backgroundImagae = movieList.results[indexPath.row].backdropPath
-        
         
         vc.textVieww = movieList.results[indexPath.row].overview
        

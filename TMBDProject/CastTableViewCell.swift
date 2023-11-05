@@ -13,6 +13,11 @@ class CastTableViewCell: UITableViewCell {
     @IBOutlet var actorNameLabel: UILabel!
     @IBOutlet var characterNameLabel: UILabel!
     
+    @IBOutlet weak var charactorName: UILabel!
+    
+    @IBOutlet weak var actorName: UILabel!
+    
+   
     
     override func awakeFromNib() {
         super.awakeFromNib()
