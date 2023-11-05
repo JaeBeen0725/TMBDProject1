@@ -35,6 +35,7 @@ class DetailViewController: UIViewController {
         moviebackGroundImageView.kf.setImage(with: url)
         
         movieTextView.text = textVieww
+        print(textVieww)
         self.title = titleText
         detail(id: id)
         castTableView.rowHeight = 200
@@ -48,31 +49,7 @@ class DetailViewController: UIViewController {
             
 
             self.castList = value
-            // self.castList = value
-            /*
-             switch response.result {
-             case .success(let value):
-             let json = JSON(value)
-             
-             
-             
-             
-             for item in json["cast"].arrayValue{
-             let tumbnail = item["profile_path"].stringValue
-             let name = item["name"].stringValue
-             let charactorName = item["character"].stringValue
-             self.castList.append(Cast(castTumbnail: tumbnail, castName: name, charactorName: charactorName))
-             
-             }
-             
-             
-             self.castTableView.reloadData()
-             print("JSON: \(json)")
-             
-             case .failure(let error):
-             print(error)
-             }
-             */
+       
         }
         
     }
