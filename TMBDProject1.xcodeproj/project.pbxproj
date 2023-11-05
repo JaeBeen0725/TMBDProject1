@@ -17,12 +17,16 @@
 		6E7178F92AF768C100120591 /* TMDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7178F82AF768C100120591 /* TMDBManager.swift */; };
 		6E7178FB2AF768FA00120591 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6E7178FA2AF768FA00120591 /* .gitignore */; };
 		6E7178FD2AF7692200120591 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7178FC2AF7692200120591 /* APIKey.swift */; };
-		6E7178FF2AF7694C00120591 /* TMDBOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7178FE2AF7694C00120591 /* TMDBOnboardingViewController.swift */; };
-		6E7179012AF7696000120591 /* TMDBGenericExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7179002AF7696000120591 /* TMDBGenericExtension.swift */; };
+		6ED3C3BC2AF76D3B00CAED98 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED3C3BB2AF76D3B00CAED98 /* SwiftyJSON */; };
+		6ED3C3BF2AF76DC300CAED98 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED3C3BE2AF76DC300CAED98 /* Kingfisher */; };
+		6ED3C3C22AF76DEE00CAED98 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED3C3C12AF76DEE00CAED98 /* Alamofire */; };
+		6ED3C3C42AF7715300CAED98 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3C3C32AF7715300CAED98 /* DetailViewController.swift */; };
+		6ED3C3C62AF7717F00CAED98 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3C3C52AF7717F00CAED98 /* MovieTableViewCell.swift */; };
+		6ED3C3C82AF771A700CAED98 /* CastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3C3C72AF771A700CAED98 /* CastTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E7178DF2AF7682100120591 /* TMBDProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMBDProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7178DF2AF7682100120591 /* TMBDProject1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMBDProject1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7178E22AF7682100120591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E7178E42AF7682100120591 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6E7178E62AF7682100120591 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +38,9 @@
 		6E7178F82AF768C100120591 /* TMDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBManager.swift; sourceTree = "<group>"; };
 		6E7178FA2AF768FA00120591 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		6E7178FC2AF7692200120591 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
-		6E7178FE2AF7694C00120591 /* TMDBOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBOnboardingViewController.swift; sourceTree = "<group>"; };
-		6E7179002AF7696000120591 /* TMDBGenericExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBGenericExtension.swift; sourceTree = "<group>"; };
+		6ED3C3C32AF7715300CAED98 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6ED3C3C52AF7717F00CAED98 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		6ED3C3C72AF771A700CAED98 /* CastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED3C3C22AF76DEE00CAED98 /* Alamofire in Frameworks */,
+				6ED3C3BF2AF76DC300CAED98 /* Kingfisher in Frameworks */,
+				6ED3C3BC2AF76D3B00CAED98 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +69,7 @@
 		6E7178E02AF7682100120591 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E7178DF2AF7682100120591 /* TMBDProject.app */,
+				6E7178DF2AF7682100120591 /* TMBDProject1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,15 +80,16 @@
 				6E7178E22AF7682100120591 /* AppDelegate.swift */,
 				6E7178E42AF7682100120591 /* SceneDelegate.swift */,
 				6E7178E62AF7682100120591 /* HomeViewController.swift */,
+				6ED3C3C32AF7715300CAED98 /* DetailViewController.swift */,
 				6E7178E82AF7682100120591 /* Main.storyboard */,
 				6E7178EB2AF7682200120591 /* Assets.xcassets */,
 				6E7178ED2AF7682200120591 /* LaunchScreen.storyboard */,
 				6E7178F02AF7682200120591 /* Info.plist */,
 				6E7178F62AF7689900120591 /* TMDB.swift */,
 				6E7178F82AF768C100120591 /* TMDBManager.swift */,
-				6E7178FE2AF7694C00120591 /* TMDBOnboardingViewController.swift */,
-				6E7179002AF7696000120591 /* TMDBGenericExtension.swift */,
 				6E7178FC2AF7692200120591 /* APIKey.swift */,
+				6ED3C3C52AF7717F00CAED98 /* MovieTableViewCell.swift */,
+				6ED3C3C72AF771A700CAED98 /* CastTableViewCell.swift */,
 			);
 			path = TMBDProject;
 			sourceTree = "<group>";
@@ -88,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E7178DE2AF7682100120591 /* TMBDProject */ = {
+		6E7178DE2AF7682100120591 /* TMBDProject1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E7178F32AF7682200120591 /* Build configuration list for PBXNativeTarget "TMBDProject" */;
+			buildConfigurationList = 6E7178F32AF7682200120591 /* Build configuration list for PBXNativeTarget "TMBDProject1" */;
 			buildPhases = (
 				6E7178DB2AF7682100120591 /* Sources */,
 				6E7178DC2AF7682100120591 /* Frameworks */,
@@ -100,9 +109,14 @@
 			);
 			dependencies = (
 			);
-			name = TMBDProject;
+			name = TMBDProject1;
+			packageProductDependencies = (
+				6ED3C3BB2AF76D3B00CAED98 /* SwiftyJSON */,
+				6ED3C3BE2AF76DC300CAED98 /* Kingfisher */,
+				6ED3C3C12AF76DEE00CAED98 /* Alamofire */,
+			);
 			productName = TMBDProject;
-			productReference = 6E7178DF2AF7682100120591 /* TMBDProject.app */;
+			productReference = 6E7178DF2AF7682100120591 /* TMBDProject1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6E7178DA2AF7682100120591 /* Build configuration list for PBXProject "TMBDProject" */;
+			buildConfigurationList = 6E7178DA2AF7682100120591 /* Build configuration list for PBXProject "TMBDProject1" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,11 +143,16 @@
 				Base,
 			);
 			mainGroup = 6E7178D62AF7682100120591;
+			packageReferences = (
+				6ED3C3BA2AF76D3B00CAED98 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				6ED3C3BD2AF76DC300CAED98 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6ED3C3C02AF76DEE00CAED98 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 6E7178E02AF7682100120591 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E7178DE2AF7682100120591 /* TMBDProject */,
+				6E7178DE2AF7682100120591 /* TMBDProject1 */,
 			);
 		};
 /* End PBXProject section */
@@ -163,8 +182,9 @@
 				6E7178E32AF7682100120591 /* AppDelegate.swift in Sources */,
 				6E7178FD2AF7692200120591 /* APIKey.swift in Sources */,
 				6E7178E52AF7682100120591 /* SceneDelegate.swift in Sources */,
-				6E7179012AF7696000120591 /* TMDBGenericExtension.swift in Sources */,
-				6E7178FF2AF7694C00120591 /* TMDBOnboardingViewController.swift in Sources */,
+				6ED3C3C62AF7717F00CAED98 /* MovieTableViewCell.swift in Sources */,
+				6ED3C3C42AF7715300CAED98 /* DetailViewController.swift in Sources */,
+				6ED3C3C82AF771A700CAED98 /* CastTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +394,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E7178DA2AF7682100120591 /* Build configuration list for PBXProject "TMBDProject" */ = {
+		6E7178DA2AF7682100120591 /* Build configuration list for PBXProject "TMBDProject1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E7178F12AF7682200120591 /* Debug */,
@@ -383,7 +403,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E7178F32AF7682200120591 /* Build configuration list for PBXNativeTarget "TMBDProject" */ = {
+		6E7178F32AF7682200120591 /* Build configuration list for PBXNativeTarget "TMBDProject1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E7178F42AF7682200120591 /* Debug */,
@@ -393,6 +413,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6ED3C3BA2AF76D3B00CAED98 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		6ED3C3BD2AF76DC300CAED98 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+		6ED3C3C02AF76DEE00CAED98 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6ED3C3BB2AF76D3B00CAED98 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6ED3C3BA2AF76D3B00CAED98 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		6ED3C3BE2AF76DC300CAED98 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6ED3C3BD2AF76DC300CAED98 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		6ED3C3C12AF76DEE00CAED98 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6ED3C3C02AF76DEE00CAED98 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E7178D72AF7682100120591 /* Project object */;
 }
