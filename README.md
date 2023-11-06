@@ -1,6 +1,6 @@
 # TMBDProject
 
-> TMDB API를 활용한 Weekly 영화 쉰위 및 영화 소개
+> TMDB API를 활용한 Weekly 영화 순위 및 영화 소개
 
 ## 목차
 [1.개발 기간](#개발-기간)
@@ -35,7 +35,7 @@
  - **UIKit** : **StoryBoard** 기반으로 사용자 인터페이스 구현 및 이벤트 관리
  - **Alamofire & TMDB API** : HTTP통신으로 TMDB 영화 데이터 request
  - **Kingfisher**: 비동기 호출후 영화 이미지 데이터를 출력 및 Caching
- - **Codable**: 원하는 인스턴스를 JSON 형태의 Data로 변환
+ - **Codable**: Model에 Protocol을 채택하여 영화 데이터를 Decode
 
 ## 트러블슈팅
 - APIKey 노출 이슈
