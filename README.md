@@ -18,13 +18,13 @@
 [7.추후 업데이트할 내용](#추후-업데이트할-내용)
 ***
 ## 개발 기간
-> 23.08.22
+> 23.11.04 ~ 23.11.05
 
 ## 개발 환경
 > Xcode 14
 
 ## 스크린샷
-<img width="645" alt="스크린샷 2023-11-06 오전 1 26 10" src="https://github.com/JaeBeen0725/TMBDProject1/assets/105216574/a0fa5e36-13f9-48a6-b485-a98e15f4128e">
+<img width="458" alt="스크린샷 2023-11-06 오후 1 56 45" src="https://github.com/JaeBeen0725/TMBDProject1/assets/105216574/86c1602c-995b-4356-b10f-5bfdda73216f">
 
 ## 주요 기능
 - 금주의 영화 순위
@@ -39,9 +39,11 @@
 
 ## 트러블슈팅
 - APIKey 노출 이슈
+
 -> .gitignore file을 생성후 APIKey file을 github에 노출되지 않도록 설정
 
 - API Respond값이 nil로 인한 movie title이 부분적으로 출력되지 않는 이슈
+
 -> originalTitle 데이터가 nil 일때 name 데이터로 변경하여 출력
 
 ~~~
@@ -51,6 +53,7 @@ cell.movieTitleLabel.text = movieList.results[indexPath.row].originalTitle ?? mo
 ~~~
 
 - genreIDS의 respond가 Int배열로 인한 추가 통신 이슈
+
 -> Dictionary타입으로 프로퍼티를 생성하여 효율적인 request 구성
 
 ~~~
@@ -61,13 +64,15 @@ let genreList : [Int : String] = [28:"Action", 12: "Adventure", 16: "Animation",
 ### Good
 - Codable에 대한 개념이해
 - Open API의 사용
+- Kingfisher Library의 이해
 
 ### Bad
 - 불필요한 데이터까지 포함한 모델구성
 - 통신 예외처리 부족
+- NavigationItem의 아쉬운 UI
 
 ## 추후 업데이트할 내용
-- 순위 Label 생성
+- Daily 영화순위 구현
 - UI개선
 - API통신 예외처리
 
