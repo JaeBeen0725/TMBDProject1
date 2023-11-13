@@ -24,11 +24,11 @@
 > Xcode 14
 
 ## 스크린샷
-<img width="458" alt="스크린샷 2023-11-06 오후 1 56 45" src="https://github.com/JaeBeen0725/TMBDProject1/assets/105216574/86c1602c-995b-4356-b10f-5bfdda73216f">
+<img width="418" alt="스크린샷 2023-11-13 오후 2 30 51" src="https://github.com/JaeBeen0725/TMBDProject1/assets/105216574/f9b021bc-16cc-48f9-b626-6301333b4c1a">
 
 ## 주요 기능
-- 금주의 영화 순위
-- 영화 줄거리 및 등장인물 소개
+- TMDB API를 활용한 Weekly 영화 순위 및 영화 소개
+- Similar 영화 추천
 ***
 
 ## 기술스택
